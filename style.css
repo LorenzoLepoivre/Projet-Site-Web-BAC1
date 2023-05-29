@@ -1,0 +1,313 @@
+@font-face{
+    font-family: "Bubble";
+    src:url("fonts/Bubble_Bobble.ttf");
+}
+
+body{
+    margin:0;
+    font-family:"Calibri", "Arial", sans-serif; 
+} 
+
+#logo{
+    width: 70%;
+	padding:25px 0;
+}
+
+img{
+	width:100%;
+} 
+
+header h1{
+    display: none;
+}
+
+header{
+   background-color:#660F85;
+}	
+
+header nav{
+   background:linear-gradient(160deg, #00b4ff, #00b4ff 50%, #ff00d8 50%, #ff00d8);
+}	
+
+header div{
+    display: flex;
+	flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header nav ul{
+    list-style: none;
+    margin:0;
+    padding: 0 0 0px 0; 
+	display:flex;
+	flex-direction:column;	
+	align-items:center;
+}
+
+header nav ul li{
+	padding:10px;
+}
+
+header nav a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+	margin:5px;
+    text-align: center;
+    font-size: 1.2rem;
+	font-family: "Bubble";
+}
+
+header nav a:hover, header nav a:active{
+    color:#000000
+}
+
+main{
+	display:flex;
+	flex-direction:column;
+	margin: 0 2.5%;
+}
+
+main h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border: 5px solid #ff00d8;
+	border-radius: 5%;
+    margin-bottom: 0;
+	font-family: "Bubble";
+}
+
+main h3{
+    font-size: 1.2rem;
+    border: 2px solid #ff00d8;
+	border-radius: 5%;
+    margin-bottom: 0;
+    padding-bottom: 1px;
+	font-family: "Bubble";
+}
+
+main section{
+	margin-top:-5px;
+}
+
+main p, main li{
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+main section form div{
+    margin-top: 10px;
+	display:flex;
+	align-items:center;
+}
+
+main section div figure img{
+    width:90%
+}
+
+main section form div label{
+    margin-right: 5px;
+}
+
+footer{
+    background-color: #660F85;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    padding: 15px;
+    color: #ffffff;
+	margin-top:10px;
+}
+
+figure{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.nb{font-size: 0.8rem;
+	display:flex;
+	justify-content:flex-end;
+}
+
+.txt-link{
+    color:#921BC5; /* Contraste avec le fond de 6.59 respect du critère WCAG 1.4.3 */
+    text-decoration: none;
+}
+ 
+.txt-link:hover, .txt-link:active{
+    color:#000000;
+	text-decoration:underline; /* respect du critère WCAG 1.4.1  */
+}
+
+.fiche {
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.fiche figure {
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
+}
+
+.femdex { 
+	display:flex; 
+	flex-flow:row wrap; 
+	padding-bottom: 10%;
+}
+
+.femdex a { 
+	margin:2%; 
+	width:46%;
+	text-decoration:none;
+}
+
+.femdex a figure { 
+	margin:0; 
+	transition:400ms; 
+	color:#fff;
+}
+
+.blue{
+	background-color:#00b4ff;
+	padding:10px 0;	
+}
+
+.rose{
+	background-color:#ff00d8; 
+	padding:10px 0;
+}
+
+.femdex a:hover figure { 
+	transform:scale(1.2);
+}
+
+.femdex a figure img { 
+	width:150%; 
+	display:block;
+}
+
+.femdex figcaption{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	font-size: 1.4rem;
+}
+
+div .sous-titre{
+	font-size: 1.1rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    html{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+    }
+    
+	#logo{
+		width: 50%;
+		padding:25px 0;
+	}
+
+    header nav ul{
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+		justify-content:center;
+    }
+	
+	header nav a{
+		padding: 5px;
+		margin:35px;
+		text-align: center;
+		font-size: 1.7rem;
+		font-family: "Bubble";
+	}
+	
+	main h2{
+    font-size: 1.6rem;
+	}
+
+	main h3{
+		font-size: 1.3rem;
+	}
+
+	main p, main li{
+		font-size: 1.2rem;
+	}
+	
+	main section div figure img{
+		width:50%
+	}
+	
+	.nb{font-size: 0.9rem;}
+
+	.site	 {
+		max-width: 70%; 
+		margin: 0 auto; 
+		background-color: #fff; 
+	}
+
+	.left-image, .right-image {
+		position: fixed;
+		width: 15%;
+		background-size: cover; 
+		background-position: center center; 
+	}
+
+	.left-image {
+		left: 0;
+		background-image: url("img/astolfo.png");
+		height: 100%;
+		top: 0;
+	}
+
+	.right-image {
+		right: 0;
+		background-image: url("img/felix.png");
+		height: 100%;
+		top: 0;	
+	}
+
+	.femdex figcaption{
+		font-size: 1.2rem;
+	}
+
+	div .sous-titre{
+		font-size: 1rem;
+	}
+
+	.fiche figure {
+	  width: 100%;
+	  height: auto;
+	  margin: 0 -10% 0 -20%;
+	}	
+
+	.femdex { 
+		display:flex; 
+		flex-flow:row wrap; 
+		padding-bottom: 0%;
+	}
+
+	.femdex a { 
+		margin:2%; 
+		width:21%;
+		text-decoration:none;
+	}
+
+	.femdex a:hover figure { 
+		transform:scale(1.2);
+	}
+
+	.femdex a figure img { 
+		width:100%; 
+	}
+
+}
